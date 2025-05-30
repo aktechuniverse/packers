@@ -6,7 +6,7 @@ sudo rm -rf /var/lib/apt/lists/*
 sudo mkdir -p /var/lib/command-not-found
 sudo touch /var/lib/command-not-found/db
 sudo apt-get clean
-####veera
+####Abhishek Singh
 
 echo "Updating apt cache..."
 sudo apt-get update -y
@@ -17,7 +17,7 @@ sudo apt-get install -y nodejs build-essential
 
 echo "Installing PM2 globally..."
 sudo npm install -g pm2
-####veera
+####Abhishek Singh
 
 echo "Copying application files..."
 sudo mkdir -p /opt/node-app
@@ -30,7 +30,7 @@ sudo pm2 start index.js
 pm2 startup
 sudo systemctl enable pm2-root
 sudo pm2 save
-####veera
+####Abhishek Singh
 
 # echo "Starting app with PM2 and enabling startup..."
 # sudo pm2 start ecosystem.config.js
